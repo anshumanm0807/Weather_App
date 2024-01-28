@@ -9,5 +9,6 @@ Wdic=json.loads(r.text)
 W=Wdic["current"]["temp_c"]
 
 engine=pyttsx3.init()
+print(f"The current weather in {city} is {W} degrees")
 engine.say(f"The current weather in {city} is {W} degrees")
 engine.runAndWait()
